@@ -1,0 +1,67 @@
+/* Reset and standardize some styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General container styles */
+body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /* Centers content horizontally */
+    justify-content: center;  /* Centers content vertically */
+    height: 100vh;  /* Make sure it fills the entire screen */
+    text-align: center;
+}
+
+/* Row to align buttons in a row */
+.button-row {
+    display: flex;
+    justify-content: center;  /* Centers buttons in the row */
+    gap: 20px;  /* Space between buttons */
+    margin-bottom: 30px;  /* Space between rows */
+}
+
+/* Category button styling */
+.category-btn {
+    position: relative;
+    width: 200px;  /* Adjustable button size */
+    height: 200px; /* Adjustable button size */
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    overflow: hidden;
+    transition: opacity 0.3s ease; /* Smooth transition on hover */
+    display: inline-block;
+}
+
+/* Image inside the button */
+.category-btn img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  /* Ensures image covers button area */
+}
+
+/* Text on top of the image */
+.category-btn .btn-text {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* Hover effect */
+.category-btn:hover {
+    opacity: 0.8; /* On hover, button fades a bit */
+}

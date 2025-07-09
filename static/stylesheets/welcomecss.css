@@ -1,0 +1,63 @@
+/* Subtle gradient background */
+body {
+  background: linear-gradient(135deg, #89cff0, #4682b4); /* Sky blue to steel blue */
+  color: #ffffff; /* Elegant white text */
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Stylish welcome box */
+.welcome-section {
+  background: rgba(255, 255, 255, 0.15); /* Frosted glass effect */
+  padding: 30px 40px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Heading with elegant style */
+.welcome-section h1 {
+  font-size: 2.8rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #fefefe;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+/* Paragraph with soft tone */
+.welcome-section p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 25px;
+  color: #e6e6e6;
+}
+
+/* Elegant button styling */
+.welcome-section button {
+  background: linear-gradient(90deg, #8e44ad, #6a1b9a); /* Purple gradient */
+  color: white;
+  font-size: 1.2rem;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(138, 43, 226, 0.4);
+}
+
+/* Button hover effect */
+.welcome-section button:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 6px 20px rgba(138, 43, 226, 0.6);
+  background: linear-gradient(90deg, #6a1b9a, #8e44ad); /* Reverse gradient */
+}

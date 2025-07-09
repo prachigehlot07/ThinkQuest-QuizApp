@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='stylesheets/style.css')}}">
+</head>
+<body>
+    <div class="container">
+        <div class="title">Quiz</div>
+        
+        <div class="timer-container">
+            <div id="timer-bar" class="timer-bar"></div>
+        </div>
+        <div id="timer-text" class="timer-text">Time Left: 30s</div>
+
+        <div class="question-number-row" id="question-number-row">
+        </div>
+
+        <div id="question-number-container" class="status-indicator-row">
+            <div id="dots-container"></div>
+        </div>
+
+        <h2 id="question">Question Text Here</h2>
+        <img id="question-media" src="" alt="Question Media" style="display:none; max-width: 100%;">
+
+        <div id="image-options" class="options" style="display: none;">
+        </div>
+        <div id="options" class="options">
+            <div class="option">Option 1</div>
+            <div class="option">Option 2</div>
+            <div class="option">Option 3</div>
+            <div class="option">Option 4</div>
+        </div>
+
+        <div id="explanation" class="explanation" style="display: none;">
+            <p id="explanation-text">Explanation text appears here after answering.</p>
+            <img id="explanation-image" src="" style="display: none;" alt="Explanation Image"/>
+        </div>
+        
+    <div class="navigation">
+        
+        <button class="nav-btn" id="prev-btn" tabindex="0">Previous Question</button>
+        <button class="nav-btn" id="next-btn" tabindex="0">Next Question</button>
+    </div>
+
+    <script src="{{ url_for('static', filename='scripts/main.js') }}"></script>
+    
+</body>
+</html>
+

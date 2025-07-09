@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+    padding: 20px;
+}
+
+.title {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.timer-container {
+    width: 100%;
+    background-color: #444;
+    border-radius: 10px;
+    position: relative;
+    height: 20px;
+    margin-bottom: 15px;
+}
+
+.timer-bar {
+    background-color: #fff;
+    height: 100%;
+    width: 100%;
+    transition: width 1s linear;
+    border-radius: 10px;
+}
+
+.timer-text {
+    margin-top: 5px;
+    font-size: 1.2em;
+}
+
+.question-number-row {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    font-size: 18px;
+    padding: 10px 0;
+    width: 100%;
+}
+#question-numbers span {
+    margin: 0 5px; /* Adjust spacing as needed */
+}
+
+#question-number-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Space between question numbers */
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.status-indicator-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 5px;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+.dot.unseen {
+    background-color: #777;
+}
+
+.dot.viewed {
+    background-color: #ffcc00;
+}
+
+.dot.attempted {
+    background-color: #28a745;
+}
+
+.question-container {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #555;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.question-container h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Padding between options */
+}
+
+.option {
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #222;
+    color: #fff;
+    border: 1px solid #555;
+    cursor: pointer;
+    text-align: left;
+    font-size: 1.2em; /* Font size for options */
+    margin-bottom: 10px;
+    transition: background-color 0.3s, border 0.3s;
+}
+
+.option:hover {
+    background-color: #333;
+}
+
+.explanation {
+    margin-top: 30px; /* Increase space between option 4 and explanation */
+    padding: 15px;
+    border: 1px solid #555;
+    border-radius: 10px;
+    font-family: Arial, sans-serif;
+    color: #ddd;
+    font-size: 1.2em; /* Same font size as options */
+    background-color: #1a1a1a;
+    display: none;
+}
+
+/* Correct and incorrect answer styles */
+.option.correct {
+    border: 2px solid #28a745; /* Green border for correct answer */
+}
+
+.option.incorrect {
+    border: 2px solid #dc3545; /* Red border for incorrect answer */
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.nav-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #000;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.nav-btn:hover {
+    background-color: #ddd;
+}
+
+
+#question-media {
+    max-width: 80%;
+    height:auto;
+    border-radius: 5px;
+    margin: 20px auto;
+    display: block;
+}
+
+@media (max-width: 600px) {
+    .title {
+        font-size: 2em;
+    }
+    .option {
+        font-size: 1em; /* Reduce font size for smaller screens */
+    }
+}
+
+
+.option-image {
+    max-width: 150px;  /* Set a max width for image options */
+    max-height: 150px; /* Set a max height for image options */
+    margin: 10px;
+    cursor: pointer;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.option-image:hover {
+    transform: scale(1.05);  /* Slight zoom on hover */
+    border-color: #444;  /* Darker border on hover */
+}
+/* Container for option images to ensure they are centered and aligned */
+.option-container {
+    display: flex;           /* Use flexbox for layout */
+    justify-content: center; /* Center the images horizontally */
+    align-items: center;     /* Center the images vertically */
+    gap: 15px;               /* Space between images */
+    flex-wrap: wrap;         /* Allow images to wrap to the next line if needed */
+    margin-top: 20px;        /* Adds space above the options */
+}
+
+/* Ensure explanation images are also well-formatted */
+#explanation-image {
+    max-width: 100%;          /* Ensure explanation image scales properly */
+    height: auto;             /* Maintain aspect ratio */
+    border-radius: 5px;       /* Rounded corners for explanation image */
+    display: block;           /* Makes sure it's a block element */
+    margin: 15px auto;        /* Centers the image and adds spacing */
+}
+/* General GIF styling */
+.gif {
+    max-width: 100%;          /* Ensures GIF scales responsively */
+    height: auto;             /* Maintains the aspect ratio */
+    border-radius: 5px;       /* Optional: Add rounded corners */
+    margin: 20px auto;        /* Centers the GIF horizontally and adds space */
+    display: block;           /* Makes it a block element, useful for centering */
+    transition: transform 0.3s ease;  /* Smooth zoom effect */
+}
+
+/* Add hover effect to GIFs */
+.gif:hover {
+    transform: scale(1.05);  /* Slight zoom on hover */
+}
