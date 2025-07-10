@@ -51,17 +51,20 @@ The quiz app will be available at `http://localhost:5000`.
 
 ## 📸 Screenshots
 
-![Home Page](image-2.png)
-![Quiz Page](image.png)
-![Results Page](image-1.png)
 
----
+Home page
 
-## 👩‍💻 Contributors
+<img width="400" height="300" alt="image" src="https://github.com/user-attachments/assets/7c95622d-b499-418a-b5be-dbaeb92cf0c9" />
 
-- [Prachi](https://github.com/prachigehlot07)
-- Reeva
-- Pragati
+Quiz page
+
+<img width="400" height="300" alt="image" src="https://github.com/user-attachments/assets/da3b5fc0-cfbb-4566-8d78-69423a28623e" />
+
+Result page
+
+<img width="400" height="300" alt="image" src="https://github.com/user-attachments/assets/f6e1532c-6044-4d55-b170-44ac03aeed3d" />
+
+
 
 ---
 
