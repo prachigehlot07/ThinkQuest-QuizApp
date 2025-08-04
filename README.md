@@ -27,7 +27,7 @@ ThinkQuest is a feature-rich quiz application designed to make learning fun and 
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/prachigehlot07/thinkquest-quiz-app.git
+git clone https://github.com/prachigehlot07/ThinkQuest-QuizApp.git
 cd thinkquest-quiz-app
 ```
 
