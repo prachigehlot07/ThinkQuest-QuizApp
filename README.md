@@ -28,7 +28,7 @@ ThinkQuest is a feature-rich quiz application designed to make learning fun and 
 
 ```bash
 git clone https://github.com/prachigehlot07/ThinkQuest-QuizApp.git
-cd thinkquest-quiz-app
+cd ThinkQuest-QuizApp
 ```
 
 ### 2. Install Backend Dependencies
@@ -65,6 +65,11 @@ Result page
 <img width="400" height="300" alt="image" src="https://github.com/user-attachments/assets/f6e1532c-6044-4d55-b170-44ac03aeed3d" />
 
 
+---
+
+## 🔧 Contributors
+
+[![contributors](https://contrib.rocks/image?repo=prachigehlot07/ThinkQuest-QuizApp)](https://github.com/prachigehlot07/ThinkQuest-QuizApp/graphs/contributors)
 
 ---
 
