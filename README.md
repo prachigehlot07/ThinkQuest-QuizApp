@@ -7,11 +7,11 @@ ThinkQuest is a feature-rich quiz application designed to make learning fun and 
 ## 🚀 Features
 
 - **Multiple Topics:** Choose from a variety of quiz subjects to challenge yourself.
-- **Timed Questions:** Each question comes with a 30-second timer to keep the excitement high.
+- **Timed Questions:** Each question comes with a 30-second reverse timer to keep the excitement high.
+- **Enhanced User Experience:** Implemented a visually appealing interface with progress indicators, real-time answer validation, and personalized explanations for incorrect answers.
 - **Instant Results:** Get your score and detailed feedback immediately after completing the quiz.
 - **No Login Required:** Jump right into the action—no sign-up or login necessary.
-- **Feedback & Explanations:** Receive tailored feedback on your performance, along with explanations for each answer to help you learn.
-- **User-friendly Interface:** Clean and intuitive design for a seamless quiz experience.
+- **Feedback:** Receive tailored feedback on your performance.
 
 ---
 
@@ -59,6 +59,7 @@ Home page
 Quiz page
 
 <img width="400" height="300" alt="image" src="https://github.com/user-attachments/assets/da3b5fc0-cfbb-4566-8d78-69423a28623e" />
+<img src="images/quiz_page.png" alt="Alt text" width="400" height="300">
 
 Result page
 
